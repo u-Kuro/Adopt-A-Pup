@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/constraint"
+    android:orientation="vertical"
+    android:background="@color/darkGrey"
+    tools:context=".view.user.UserActivity"
+    tools:ignore="Overdraw">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="@id/constraint"
+        app:layout_constraintLeft_toLeftOf="@id/constraint"
+        app:layout_constraintRight_toRightOf="@id/constraint"
+        android:background="@color/darkGrey">
+        <androidx.appcompat.widget.Toolbar
+            android:background="@color/darkGrey"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:contentInsetLeft="0dp"
+            android:contentInsetStart="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            android:contentInsetRight="0dp"
+            android:contentInsetEnd="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetEnd="0dp"
+            android:layout_marginHorizontal="12dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:textAlignment="textStart"
+                        android:ellipsize="end"
+                        android:longClickable="true"
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:text="Adopt a Pup"
+                        tools:ignore="HardcodedText" />
+
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@id/contact"
+                        android:src="@drawable/search_white"
+                        android:padding="12dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:contentDescription="Search"
+                        tools:ignore="HardcodedText" />
+                    <ImageView
+                        android:id="@+id/contact"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@id/profile"
+                        android:src="@drawable/support_agent_white"
+                        android:padding="12dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:contentDescription="Contact"
+                        tools:ignore="HardcodedText" />
+                    <ImageView
+                        android:id="@+id/profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/account_white"
+                        android:padding="12dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:contentDescription="Profile"
+                        android:layout_centerVertical="true"
+                        tools:ignore="HardcodedText" />
+                </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <TextView
+        android:id="@+id/user_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="...Please Wait..."
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:paddingVertical="8dp"
+        android:textColor="@color/white"
+        tools:ignore="HardcodedText" />
+    <ListView
+        android:id="@+id/available_dogs_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Adopt-a-Pup</string>
+    <string name="login_as_admin">Login as Admin</string>
+    <string name="login_as_user">Login as User</string>
+    <string name="adopt_dog">Adopt Dog</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="update_dog">Update Dog</string>
+    <string name="remove_dog">Remove Dog</string>
+    <string name="dog_photo">Dog Photo</string>
+    <string name="dog_photo_icon">Dog Photo Icon</string>
+    <string name="approve_adoption">Approve Adoption</string>
+    <string name="reject_adoption">Reject Adoption</string>
+    <string name="send_an_email">Send an Email</string>
+    <string name="na">NA</string>
+</resources>
